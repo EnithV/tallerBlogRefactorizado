@@ -1,5 +1,5 @@
-Y aquí esta el css 
-:root{
+:root {
+    /* COLORES */
     --color-a: #0a0a0f;
     --color-b: #11111a;
     --color-c: #1a1a2e;
@@ -13,23 +13,45 @@ Y aquí esta el css
     --color-l: #e6e6e6;
     --color-m: #a0a0b0;
 }
- 
-:root{
-    --color-a: #0a0a0f;
-    --color-b: #11111a;
-    --color-c: #1a1a2e;
-    --color-d: #00f7ff;
-    --color-e: #ff00e6;
-    --color-f: #7b00ff;
-    --color-h: #a754ff;
-    --color-i: #00ff9f;
-    --color-j: #ffae00;
-    --color-k: #ff3c3c;
-    --color-l: #e6e6e6;
-    --color-m: #a0a0b0;
+
+/* ----- BARRA DE NAVEGACIÓN CON BOOTSTRAP ----- */
+header {
+    margin-bottom: 20px;
+    padding: 0;
 }
  
+.navbar {
+    background-color: var(--color-b);
+    border: 4px dashed var(--color-f);
+    box-shadow: var(--box-shadow-a);
+    padding: 30px 0;
+}
  
+.navbar-brand img {
+    width: 180px;
+    height: 45px;
+}
+ 
+.nav-link {
+    color: var(--color-d);
+    text-shadow: var(--text-shadow-b);
+    text-transform: uppercase;      
+    letter-spacing: 1px;              
+    border-radius: 4px;              
+    transition: 0.3s;      
+}
+ 
+.nav-link:hover {
+    background-color: var(--color-f);
+    color: #292929;
+    border-radius: 4px;
+    transform: translateY(-3px);        
+}
+ 
+.navbar-toggler {
+    border: 2px dashed var(--color-d);
+}
+
 /* GENERAL */
  
 body{
