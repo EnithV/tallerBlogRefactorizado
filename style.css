@@ -315,17 +315,33 @@ main {
 }
 
 
-/* ------ PIE DE PAGINA ------ */
-footer {
-    width: 100%;
-    margin-top: auto; /* Para que el footer siempre esté abajo */
-    padding: 40px;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
+/* ------ PIE DE PAGINA REFACTORIZADO CON BOOTSTRAP ------ */
+.piePagina {
     border: 4px dashed var(--color-f);
     box-shadow: 0 0 15px 0 var(--color-f);
+    background-color: var(--color-b);
 }
 
-footer p {
-    font-weight: bold;
+.piePagina h3, 
+.piePagina h4 {
+    color: var(--color-d);
+    text-shadow: var(--text-shadow-b);
+}
+
+.piePagina p,
+.piePagina li {
+    color: var(--color-h);
+    text-shadow: var(--text-shadow-b);
+}
+
+.piePagina hr {
+    border-color: var(--color-f);
+    opacity: 0.5;
+}
+
+/* Efecto hover para los autores */
+.piePagina li:hover {
+    color: var(--color-j);
+    cursor: pointer;
+    transition: color 0.3s;
 }
