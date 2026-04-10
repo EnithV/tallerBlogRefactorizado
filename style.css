@@ -32,75 +32,54 @@ body {
     text-align: left;
     color: #e8e8e8;
     background-color: #15152a !important;
-
-    /* Haciendo que el footer siempre esté al final */
     display: flex;
     flex-direction: column;    
     min-height: 100vh;
 }
 
+
+
 header {
-    margin-bottom: 90px;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 /* ----- BARRA DE NAVEGACIÓN ------ */
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
-    border-radius: 0 0 20px 20px;
-    flex-wrap: wrap;
+
+.navbar {
     background-color: var(--color-b);
-    position: fixed;
     border: 4px dashed var(--color-f);
-    box-shadow: 0 0 15px 0 var(--color-f);
+    box-shadow: var(--box-shadow-a);
+    padding: 30px 0;
 }
 
-.nav__logo {
-    width: 220px;
-    height: 50px;
+
+
+.navbar-brand img {
+    width: 180px;
+    height: 45px;
 }
 
-.nav__items {
-    display: none;
-    list-style: none;
-    gap: 10px;
-    color: #dddddd;
-}
-
-.nav__link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 15px 30px;
-    border-radius: 10px;
+.nav-link {
     color: var(--color-d);
     text-shadow: var(--text-shadow-b);
-    transition: background-color 0.5s, color 0.5s, outline 0.2s, box-shadow 0.5s;
+    text-transform: uppercase;       
+    letter-spacing: 1px;              
+    border-radius: 4px;               
+    transition: 0.3s;      
 }
 
-.nav__link:hover {
+.nav-link:hover {
     background-color: var(--color-f);
     color: #292929;
-    outline: 3px dashed var(--color-d);
-    box-shadow: 0 0 10px 0 var(--color-d);
+    border-radius: 4px;
+    transform: translateY(-3px);        
 }
 
-.nav__toggle {
-    font-size: 2rem;
+.navbar-toggler {
+    border: 2px dashed var(--color-d);
 }
 
-@media screen and (min-width: 426px) {
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__items {
-        display: flex;
-    }    
-}
 
 
 /* --------- HOLY GRAIL ---------- */

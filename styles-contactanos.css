@@ -1,10 +1,8 @@
-.container {
- 
-        max-width: 1100px;
-        margin: 100px auto;
-        padding: 20px;
-    }
- 
+.contact-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
     h1 {
         text-align: center;
         margin-bottom: 40px;
