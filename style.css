@@ -129,6 +129,7 @@ main {
     box-shadow: 0 0 15px 0 var(--color-f);
     background-color: #15152a !important;
     transition: transform 0.5s;
+    
 }
 
 .card-title {
@@ -150,6 +151,10 @@ main {
 
 .card:hover {
     transform: scale(1.07);
+}
+
+.btn:hover {
+    background-color: #fff !important;
 }
 
 
