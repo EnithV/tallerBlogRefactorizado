@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles-acerca.css">
     <link rel="stylesheet" href="styles-contactanos.css">
+
+    <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <title>BLOG</title>
 </head>
 <body>
@@ -17,8 +21,8 @@
 
             <ul class="nav__items">
                 <li><a class="nav__link" href="#">Inicio</a></li>
-                <li><a class="nav__link" href="/acerca.html">Acerca</a></li>
-                <li><a class="nav__link" href="/contactanos.html">Contacto</a></li>
+                <li><a class="nav__link" href="/tallerBlogRefactorizado/acerca.html">Acerca</a></li>
+                <li><a class="nav__link" href="/tallerBlogRefactorizado/acerca.html">Contacto</a></li>
             </ul>
 
             <div class="nav__toggle">☰</div>            
@@ -28,149 +32,6 @@
 
     <!-- HOLY GRAIL -->
     <div class="wrapper-container">
-
-        <!-- CONTENIDO PRINCIPAL -->
-        <main class="main">
-
-            <!-- Titulo e imagen de portada -->
-            <div>
-                <h1 class="main__title">GUIA PRINCIPAL</h1>
-
-                <picture>
-                    <source 
-                    media="(min-width: 1025px)" 
-                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
-                    type="image/jpg">
-
-                    <source 
-                    media="(min-width: 426px)" 
-                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
-                    type="image/jpg">
-
-                    <source 
-                    media="(min-width: 100px)" 
-                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
-                    type="image/jpg">
-
-                    <img class="main__cover"
-                    src="Imagenes/Paisajes/Portada-High.jpg"
-                    alt="Imagen paisaje de portada">
-                </picture>
-            </div>
-            
-            <!-- Titulo secundario y parrafo -->
-            <article>
-                <h2 class="main__second-title">¿COMO SE DESARROLLA UN VIDEOJUEGO?</h2>
-                <p class="main__text">
-                    En este blog aprenderás paso a paso cómo crear videojuegos desde cero, explorando mecánicas, lógica de programación y diseño interactivo, mientras aplicas buenas prácticas que te ayudarán a construir experiencias sólidas, funcionales y cada vez más profesionales.
-                </p>
-            </article>
-
-            <!-- Otros articulos -->
-            <div>
-                <h2 class="articles__title">ARTICULOS RECIENTES</h2>
-
-                <div class="articles-wrapper">
-
-                    <!-- Articulo #1 -->
-                    <article class="article">
-
-                        <a class="article__content" href="#">
-
-                            <picture class="article__picture">
-                                <source 
-                                media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-1/Articulo-1-high.png" 
-                                type="image/png">
-
-                                <source 
-                                media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-1/Articulo-1-high.png" 
-                                type="image/png">                                
-
-                                <img class="article__image"
-                                src="Imagenes/Articulo-1/Articulo-1-high.png" alt="Imagen portada blog 1">
-                            </picture>
-
-                            <div class="article__title-and-text">
-                                
-                                <h3 class="article__title">CONTROL MOVIMIENTO</h3>
-
-                                <p class="article__text">Control básico de movimiento para tu personaje en 2D/3D juego...</p>
-                            </div>
-                        </a>  
-
-                    </article>
-                    
-
-                    <!-- Articulo #2 -->
-                     <article class="article">
-
-                        <a class="article__content" href="#">
-
-                            <picture class="article__picture">
-
-                                <source 
-                                media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-2/Articulo-2-middle.png" 
-                                type="image/png">
-
-                                <source 
-                                media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-2/Articulo-2-middle.png" 
-                                type="image/png">                                
-
-                                <img class="article__image"
-                                src="Imagenes/Articulo-2/Articulo-2-middle.png" alt="Imagen portada blog 2">
-                            </picture>
-
-                            <div class="article__title-and-text">
-                                
-                                <h3 class="article__title">SISTEMA DE SALTO</h3>
-
-                                <p class="article__text">Salto avanzado del personaje en entorno 2D/3D con físicas...</p>
-                            </div>
-                        </a>  
-
-                    </article>                     
-                     
-
-                    <!-- Articulo #3 -->
-                     <article class="article">
-
-                        <a class="article__content" href="#">
-
-                            <picture class="article__picture">
-
-                                <source 
-                                media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-3/Articulo-3-middle.png" 
-                                type="image/jpg">
-
-                                <source 
-                                media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-3/Articulo-3-middle.png" 
-                                type="image/jpg">                                
-
-                                <img class="article__image"
-                                src="Imagenes/Articulo-3/Articulo-3-middle.png" alt="Imagen portada blog 3">
-                            </picture>
-
-                            <div class="article__title-and-text">
-                                
-                                <h3 class="article__title">SISTEMA DE COMBATE</h3>
-
-                                <p class="article__text">Sistema de combate con ataques avanzados y detección de colisiones...</p>
-                            </div>
-                        </a>  
-
-                    </article>
-                     
-                </div>
-
-            </div>                        
-
-        </main>
 
 
         <!-- CONTENIDO SECUNDARIO -->
@@ -203,6 +64,76 @@
             </div>
             
         </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main>  
+
+            <!-- Card 1 -->
+            <div class="card" style="width: 18rem;">
+                <img src="/tallerBlogRefactorizado/Imagenes/Articulo-1/Articulo-1-high.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CONTROL MOVIMIENTO</h5>
+                    <p class="card-text">Control básico de movimiento para tu personaje en 2D/3D juego...</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Soporte para Mandos/Teclado</li>
+                    <li class="list-group-item">Sistema de aceleración y fricción.</li>
+                    <li class="list-group-item">Animaciones de "Sprint" dinámicas.</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+
+            </div>  
+            
+            <!-- Card 2 -->
+            <div class="card" style="width: 18rem;">
+                <img src="/tallerBlogRefactorizado/Imagenes/Articulo-2/Articulo-2-middle.png" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">SISTEMA DE SALTO</h5>
+                    <p class="card-text">Salto avanzado del personaje en entorno 2D/3D con físicas...</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Salto doble y propulsores.</li>
+                    <li class="list-group-item">Gravedad ajustable por zona.</li>
+                    <li class="list-group-item">Detección de colisiones en bordes.</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card" style="width: 18rem;">
+                <img src="/tallerBlogRefactorizado/Imagenes/Articulo-3/Articulo-3-middle.png" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">SISTEMA DE COMBATE</h5>
+                    <p class="card-text">Sistema de combate con ataques avanzados y detección de colisiones...</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Combos de ataque ligero/pesado.</li>
+                    <li class="list-group-item">Sistema de partículas de energía.</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+        </main>
 
     </div>
 
@@ -239,6 +170,8 @@
 </p>
  
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -104,58 +104,52 @@ header {
 
 
 /* --------- HOLY GRAIL ---------- */
-.wrapper-container {
-    display: flex;
-    flex-wrap: wrap;
+.wrapper-container {    
     max-width: 1440px;
     margin: auto;
     margin-top: 20px;
     padding: 30px;
-    gap: 40px;
     margin-bottom: 50px;
 }
 
 
 /* Contenido Principal */
-.main {
-    flex: 1 2 700px;
+main {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
-.main__title {
-    padding: 0 0 15px 15px;
-    font-size: 2rem;
-    color: var(--color-e);
+
+/* Cards */
+.card {
+    margin: auto;
+    margin-top: 50px;
+    border: 4px dashed var(--color-f) !important;
+    box-shadow: 0 0 15px 0 var(--color-f);
+    background-color: #15152a !important;
+    transition: transform 0.5s;
+}
+
+.card-title {
+    color: var(--color-e) !important;
     text-shadow: 5px 2px 15px var(--color-e);
+    font-weight: bold;
 }
 
-.main__cover {
-    width: 100%;
-    border: 4px dashed var(--color-f);
-    border-radius: 15px;
-    box-shadow: var(--box-shadow-a);
-}
-
-.main__second-title {    
-    margin-bottom: 20px;
-    color: var(--color-e);
-    text-shadow: var(--text-shadow-a);
-}
-
-.main__text {
-    color: var(--color-h);
+.card-text {
+    color: var(--color-d);
     text-shadow: var(--text-shadow-b);
 }
 
-h2 {
-    font-size: 2rem;
+.list-group-item {
+    background-color: #15152a !important;
+    color: var(--color-d) !important;
+    text-shadow: var(--text-shadow-b);
 }
 
-p {
-    font-size: 1.4rem;
-    text-wrap: pretty;
+.card:hover {
+    transform: scale(1.07);
 }
 
 
